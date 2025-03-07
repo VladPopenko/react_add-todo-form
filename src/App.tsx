@@ -8,7 +8,7 @@ import { TODO } from './types/TodoType';
 import { USER } from './types/UserType';
 import { FormValues } from './types/FormValues';
 import { formValidation } from './utils/formValidation';
-import { getMaxId } from './utils/getMaxld';
+import { getMaxId } from './utils/getMaxId';
 
 export const App = () => {
   const [users] = useState<USER[]>(usersFromServer);
@@ -92,7 +92,7 @@ export const App = () => {
             value={values.userId}
             onBlur={() =>
               setUserSelectError(
-                values.userId === null ? 'Please choose a user' : '',
+                values.userId === '0' ? 'Please choose a user' : '',
               )
             }
           >
